@@ -82,3 +82,8 @@ symfony php bin/phpunit
 ```bash
 symfony serve
 ```
+
+### PHPStan
+```bash
+vendor/bin/phpstan analyse src tests --memory-limit 4048M
+```
