@@ -20,11 +20,11 @@ class Tag
     #[Id]
     #[GeneratedValue]
     #[Column]
-    private ?int $id = null;
+    private ?int $id = null; // @phpstan-ignore-line property.unusedType
 
     #[Column(unique: true)]
     #[Slug(fields: ['name'])]
-    private string $code;
+    private string $code; // @phpstan-ignore-line property.onlyRead
 
     #[NotBlank]
     #[Length(max: 30)]
